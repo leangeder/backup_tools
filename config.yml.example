@@ -1,0 +1,44 @@
+
+mode: cron
+format: /sdf/sdf
+# type: events
+loglevel: debug # debug|info|warn|error|fatal|panic
+logpath: "./logs/backup.log"
+verbose: true # false
+scheduler: ""
+notifications:
+  slack:
+  email:
+storages:
+  gcs:
+  aws:
+  fs:
+  glusterfs:
+  ceph:
+  nfs:
+  smb:
+services:
+  mongodb:
+    hostname:
+    username:
+    password:
+    port:
+    db:
+  elasticsearch:
+    hostname:
+    username:
+    password:
+    port:
+    db:
+  mysql:
+    hostname:
+    username:
+    password:
+    port:
+    db:
+  redis:
+    hostname:
+    username:
+    password:
+    port:
+    db:
